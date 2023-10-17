@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=Libre+Baskerville&family=Montserrat:wght@400;700;900&family=Poppins:wght@400;700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 18px;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  color: hsl(241, 100%, 89%);
+}
+
+/* results section  */
+
+.result-section {
+  text-align: center;
+  background-color: hsl(241, 81%, 54%);
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 2em;
+  border-radius: 0 0 2em 2em;
+}
+
+.result-section__heading {
+  font-size: 1.5rem;
+}
+
+.result-section__comment {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+}
+
+.result-section__container {
+  width: 12em;
+  height: 12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  font-weight: 800;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, hsl(241, 81%, 54%), transparent);
+}
+
+.result-section__score {
+  display: block;
+  font-size: 5rem;
+  color: white;
+}
+
+.result-section__comment {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.result-section__description {
+  margin-top: 1em;
+}
+
+/* summary section  */
+
+.summary-section {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  color: hsl(241, 20%, 60%);
+}
+
+.summary-section__heading {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  font-size: 1.4rem;
+  /* margin: 1rem 0; */
+}
+
+.summary-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.summary-section__name {
+  display: flex;
+  font-weight: bold;
+}
+
+.summary-section__icon {
+  margin-right: 1em;
+}
+
+.summary-section__score {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* summary 1 styles  */
+.summary-section__content--1 {
+  background-color: hsla(0, 100%, 65%, 0.1);
+}
+
+.summary-section__name--1 {
+  color: hsl(0, 100%, 67%);
+}
+
+/* summary 2 styles  */
+.summary-section__content--2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.summary-section__name--2 {
+  color: hsl(39, 100%, 56%);
+}
+
+/* summary 3 styles  */
+.summary-section__content--3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.summary-section__name--3 {
+  color: hsl(166, 100%, 37%);
+}
+
+/* summary 4 styles  */
+.summary-section__content--4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.summary-section__name--4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.summary__button {
+  text-decoration: none;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  padding: 1.2em 1.5em;
+  text-align: center;
+  border-radius: 4em;
+  transition: 0.2s;
+}
+
+.summary__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.summary__button:focus {
+  outline: 2px solid hsl(224, 30%, 27%);
+  outline-offset: 3px;
+  background-color: hsl(224, 67%, 47%);
+}
+
+@media screen and (min-width: 770px) {
+  .container {
+    display: flex;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+    max-width: 700px;
+  }
+  .container > * {
+    flex-basis: 50%;
+  }
+
+  .result-section {
+    border-radius: 2em;
+  }
+}

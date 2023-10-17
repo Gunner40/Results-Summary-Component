@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <!-- result section  -->
+        <section class="result-section">
+          <h3 class="result-section__heading">Your Result</h3>
+          <div class="result-section__container">
+            <p class="result__section__result">
+              <span class="result-section__score"></span> of 100
+            </p>
+          </div>
+          <p class="result-section__comment">Great</p>
+          <p class="result-section__description">
+            You have scored higher than 65% of the people who have taken these
+            tests.
+          </p>
+        </section>
+
+        <!-- summary section  -->
+        <section class="summary-section">
+          <h4 class="summary-section__heading">Summary</h4>
+
+          <!-- JSON data will be displayed here  -->
+
+          <a href="/" class="summary__button">Continue</a>
+        </section>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Paul Ryan</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
